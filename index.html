@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Federal Neuro-Psychiatric Hospital College of Nursing Science Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Medical_symbol.svg/1200px-Medical_symbol.svg.png" alt="School Logo" class="logo">
+    <h1>Federal Neuro-Psychiatric Hospital<br>College of Nursing Science Portal</h1>
+  </header>
+
+  <main>
+    <!-- Login Page -->
+    <section id="login-page" class="page active">
+      <h2>Login to Your Portal</h2>
+      <div class="login-box">
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+      </div>
+      <p class="hint">Demo Accounts → student / lecturer / admin (password: 1234)</p>
+    </section>
+
+    <!-- Student Dashboard -->
+    <section id="student-page" class="page">
+      <h2>Student Dashboard</h2>
+      <p id="student-name"></p>
+      <h3>Registered Courses</h3>
+      <ul id="student-courses"></ul>
+      <h3>Grades</h3>
+      <ul id="student-grades"></ul>
+      <button onclick="logout()">Logout</button>
+    </section>
+
+    <!-- Lecturer Dashboard -->
+    <section id="lecturer-page" class="page">
+      <h2>Lecturer Dashboard</h2>
+      <p id="lecturer-name"></p>
+      <h3>Assigned Courses</h3>
+      <ul id="lecturer-courses"></ul>
+      <button onclick="logout()">Logout</button>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="admin-page" class="page">
+      <h2>Administrator Dashboard</h2>
+      <p>Welcome Admin! Use this panel to manage student and lecturer accounts, post announcements, and update timetables.</p>
+      <button onclick="logout()">Logout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Federal Neuro-Psychiatric Hospital College of Nursing Science. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
