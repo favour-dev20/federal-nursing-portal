@@ -4,59 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Federal Neuro-Psychiatric Hospital College of Nursing Science Portal</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
 
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Medical_symbol.svg/1200px-Medical_symbol.svg.png" alt="School Logo" class="logo">
-    <h1>Federal Neuro-Psychiatric Hospital<br>College of Nursing Science Portal</h1>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="College Logo">
+      <h1>College of Nursing Science</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <!-- Login Page -->
-    <section id="login-page" class="page active">
-      <h2>Login to Your Portal</h2>
-      <div class="login-box">
-        <input type="text" id="username" placeholder="Enter your username">
-        <input type="password" id="password" placeholder="Enter your password">
-        <button onclick="login()">Login</button>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome to the Federal Neuro-Psychiatric Hospital College of Nursing Science</h2>
+      <p>Empowering the next generation of compassionate healthcare professionals.</p>
+      <a href="login.html" class="cta-btn">Access Portal</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      The Federal Neuro-Psychiatric Hospital College of Nursing Science is dedicated to 
+      providing world-class nursing education and training. We focus on excellence, compassion,
+      and innovation in mental health and general nursing care.
+    </p>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs" id="programs">
+    <h2>Our Programs</h2>
+    <div class="program-list">
+      <div class="program">
+        <h3>Basic Nursing</h3>
+        <p>Comprehensive 3-year program that builds strong clinical and theoretical skills.</p>
       </div>
-      <p class="hint">Demo Accounts → student / lecturer / admin (password: 1234)</p>
-    </section>
 
-    <!-- Student Dashboard -->
-    <section id="student-page" class="page">
-      <h2>Student Dashboard</h2>
-      <p id="student-name"></p>
-      <h3>Registered Courses</h3>
-      <ul id="student-courses"></ul>
-      <h3>Grades</h3>
-      <ul id="student-grades"></ul>
-      <button onclick="logout()">Logout</button>
-    </section>
+      <div class="program">
+        <h3>Post Basic Psychiatric Nursing</h3>
+        <p>Specialized course for professional nurses focusing on mental health care.</p>
+      </div>
 
-    <!-- Lecturer Dashboard -->
-    <section id="lecturer-page" class="page">
-      <h2>Lecturer Dashboard</h2>
-      <p id="lecturer-name"></p>
-      <h3>Assigned Courses</h3>
-      <ul id="lecturer-courses"></ul>
-      <button onclick="logout()">Logout</button>
-    </section>
+      <div class="program">
+        <h3>Continuing Education</h3>
+        <p>Workshops and training for practicing nurses to enhance their knowledge and skills.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Admin Dashboard -->
-    <section id="admin-page" class="page">
-      <h2>Administrator Dashboard</h2>
-      <p>Welcome Admin! Use this panel to manage student and lecturer accounts, post announcements, and update timetables.</p>
-      <button onclick="logout()">Logout</button>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@federalnursingportal.edu.ng</p>
+    <p>Phone: +234 800 123 4567</p>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Federal Neuro-Psychiatric Hospital College of Nursing Science. All Rights Reserved.</p>
+    <p>© 2025 Federal Neuro-Psychiatric Hospital College of Nursing Science. All rights reserved.</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
